@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>página de formulário</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="disabled.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <img src="img/logoIbrap.png" class="rounded mx-auto d-block" alt="logo Ibrap">
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p>Cadastro de Veículos</p>
+      </blockquote>
+    </figure>
+
+    <form class="row g-3">
+      <div class="col-md-12">
+        <label for="inputName" class="form-label" _msthash="2352545" _msttexthash="58058">Nome completo</label>
+        <input type="text" class="form-control" id="inputName">
+      </div>
+
+      <select class="form-select"  _mstaria-label="639366">
+        <option selected="" _msthash="2101034" _msttexthash="390026">selecionar o tipo</option>
+        <option value="1" _msthash="2101216" _msttexthash="30446">caminhão</option>
+        <option value="2" _msthash="2101398" _msttexthash="33007">carro</option>
+        <option value="3" _msthash="2101580" _msttexthash="59371">onibus</option>
+        <option value="4" _msthash="2101580" _msttexthash="59371">moto</option>
+      </select>
+
+      <select class="form-select" id= "marca" _mstaria-label="639366">
+        <option selected="" _msthash="2101034" _msttexthash="390026">selecionar a marca</option>
+        <option value="1" _msthash="2101216" _msttexthash="30446">Chevrolet</option>
+        <option value="2" _msthash="2101398" _msttexthash="33007">Citroën</option>
+        <option value="3" _msthash="2101580" _msttexthash="59371">Fiat</option>
+        <option value="4" _msthash="2101580" _msttexthash="59371">Ford</option>
+        <option value="1" _msthash="2101216" _msttexthash="30446">Honda</option>
+        <option value="2" _msthash="2101398" _msttexthash="33007">Jeep</option>
+        <option value="3" _msthash="2101580" _msttexthash="59371">Kia</option>
+        <option value="4" _msthash="2101580" _msttexthash="59371">Volkswagen</option>
+        <option value="1" _msthash="2101216" _msttexthash="30446">Mercedes</option>
+        <option value="2" _msthash="2101398" _msttexthash="33007">BMW</option>
+        <option value="3" _msthash="2101580" _msttexthash="59371">Volvo</option>
+        <option value="4" _msthash="2101580" _msttexthash="59371">Scania</option>
+      </select>
+
+      <div class="col-md-12">
+        <label for="inputPassword4"  class="form-label" _msthash="2352792" _msttexthash="58318">Modelo</label>
+        <input type="model" class="form-control" id="inputmodel4">
+      </div>
+
+      <label for="exampleColorInput" class="form-label" _msthash="1496651" _msttexthash="261534">Seletor de cores</label>
+      <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+
+      <div class="col-12">
+        <label for="inputRenavam" class="form-label" _msthash="2353039" _msttexthash="133848">Renavam</label>
+        <input type="text" class="form-control" id="inputRenavam"  _mstplaceholder="287287">
+      </div>
+
+      <div class="col-12">
+        <label for="inputPlaca" class="form-label" _msthash="2353039" _msttexthash="133848">Placa</label>
+        <input type="text" class="form-control" id="inputPlaca"  _mstplaceholder="287287">
+      </div>
+
+      <div class="col-12">
+        <label for="inputValor" class="form-label" _msthash="2353039" _msttexthash="133848">Valor do Veículo</label>
+        <input type="text" class="form-control" id="inputValor"  _mstplaceholder="287287">
+      </div>
+
+      <div class="col-12">
+        <label for="inputProprietário" class="form-label" _msthash="2353039" _msttexthash="133848">Proprietário</label>
+        <input type="text" class="form-control" id="inputProprietário"  _mstplaceholder="287287">
+      </div>
+
+      <div class="col-12">
+        <label for="inputTelefone" class="form-label" _msthash="2353039" _msttexthash="133848">Telefone</label>
+        <input type="text" class="form-control" id="inputTelefone" placeholder="+55 48 999 99 99" _mstplaceholder="287287">
+      </div>
+
+      <div class="col-12">
+        <label for="inputCelular" class="form-label" _msthash="2353039" _msttexthash="133848">Celular</label>
+        <input type="text" class="form-control" id="inputCelular" placeholder="+55 48 999 99 99" _mstplaceholder="287287">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputState" class="form-label" _msthash="2353780" _msttexthash="76037">Estado</label>
+        <select id="inputState" class="form-select">
+          <option selected="" _msthash="402324" _msttexthash="101647">Escolher...</option>
+          <option _msthash="402506" _msttexthash="14352">Acre</option>
+          <option _msthash="402506" _msttexthash="14352">Alagoas</option>
+          <option _msthash="402506" _msttexthash="14352">Amapá</option>
+          <option _msthash="402506" _msttexthash="14352">Amazonas</option>
+          <option _msthash="402506" _msttexthash="14352">Bahia</option>
+          <option _msthash="402506" _msttexthash="14352">Ceará</option>
+          <option _msthash="402506" _msttexthash="14352">Distrito Federal</option>
+          <option _msthash="402506" _msttexthash="14352">Espírito Santo</option>
+          <option _msthash="402506" _msttexthash="14352">Goiás</option>
+          <option _msthash="402506" _msttexthash="14352">Maranhão</option>
+          <option _msthash="402506" _msttexthash="14352">Mato Grosso</option>
+          <option _msthash="402506" _msttexthash="14352">Mato Grosso do sul</option>
+          <option _msthash="402506" _msttexthash="14352">Minas Gerais</option>
+          <option _msthash="402506" _msttexthash="14352">Pará</option>
+          <option _msthash="402506" _msttexthash="14352">Paraíba</option>
+          <option _msthash="402506" _msttexthash="14352">Paraná</option>
+          <option _msthash="402506" _msttexthash="14352">Pernambuca</option>
+          <option _msthash="402506" _msttexthash="14352">Piauí</option>
+          <option _msthash="402506" _msttexthash="14352">Rio de Janeiro</option>
+          <option _msthash="402506" _msttexthash="14352">Rio Grande do Norte</option>
+          <option _msthash="402506" _msttexthash="14352">Rio Grande do Sul</option>
+          <option _msthash="402506" _msttexthash="14352">Rondônia</option>
+          <option _msthash="402506" _msttexthash="14352">Roraima</option>
+          <option _msthash="402506" _msttexthash="14352">Santa Catarina</option>
+          <option _msthash="402506" _msttexthash="14352">São Paulo</option>
+          <option _msthash="402506" _msttexthash="14352">Sergipe</option>
+          <option _msthash="402506" _msttexthash="14352">Tocantins</option>
+        </select>
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputCep" class="form-label" _msthash="2353039" _msttexthash="133848">CEP</label>
+        <input type="text" class="form-control" id="inputCep" placeholder="000-00-000" _mstplaceholder="287287">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label" _msthash="2353533" _msttexthash="71383">Cidade</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="Exemplo: Cocal do Sul">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputAddress" class="form-label" _msthash="2353039" _msttexthash="133848">Endereço</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Rua Principal" _mstplaceholder="287287">
+      </div>
+
+     
+      <div class="col-12">
+        <label for="inputBairro" class="form-label" _msthash="2353039" _msttexthash="133848">Bairro</label>
+        <input type="text" class="form-control" id="inputBairro" placeholder="Exemplo: Nazaré" _mstplaceholder="287287">
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Ativo
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Inativo
+        </label>
+      </div>
+      
+    <label for="billing-checkbox">Deletado</label>
+    <input type="checkbox" id="billing-checkbox">
+
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" _msthash="2436798" _msttexthash="77766">Gravar</button>
+        <button type="reset" class="btn btn-primary" _msthash="2436798" _msttexthash="77766" data-bs-toggle="modal" data-bs-target="#exampleModal"s>Limpar</button>
+        <button type="button" class="btn btn-primary" _msthash="2436798" _msttexthash="77766">Voltar</button>
+      </div>
+    </form>
+    
+   
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Perigo</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Dese executar?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="confirmar">Sim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </body>
+</html>
