@@ -8,7 +8,10 @@
     <title>página de formulário</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="disabled.js"></script>
+    <script src="date.js"></script>
+    <script src="gravar.js"></script>
   </head>
   <body class="p-3 m-0 border-0 bd-example">
 
@@ -24,6 +27,9 @@
       <div class="col-md-12">
         <label for="inputName" class="form-label" _msthash="2352545" _msttexthash="58058">Nome completo</label>
         <input type="text" class="form-control" id="inputName">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <select class="form-select"  _mstaria-label="639366">
@@ -53,6 +59,9 @@
       <div class="col-md-12">
         <label for="inputPassword4"  class="form-label" _msthash="2352792" _msttexthash="58318">Modelo</label>
         <input type="model" class="form-control" id="inputmodel4">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <label for="exampleColorInput" class="form-label" _msthash="1496651" _msttexthash="261534">Seletor de cores</label>
@@ -61,31 +70,50 @@
       <div class="col-12">
         <label for="inputRenavam" class="form-label" _msthash="2353039" _msttexthash="133848">Renavam</label>
         <input type="text" class="form-control" id="inputRenavam"  _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-12">
         <label for="inputPlaca" class="form-label" _msthash="2353039" _msttexthash="133848">Placa</label>
-        <input type="text" class="form-control" id="inputPlaca"  _mstplaceholder="287287">
+        <input type="text" class="form-control" id="inputPlaca" required>
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
+      
 
       <div class="col-12">
         <label for="inputValor" class="form-label" _msthash="2353039" _msttexthash="133848">Valor do Veículo</label>
         <input type="text" class="form-control" id="inputValor"  _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-12">
         <label for="inputProprietário" class="form-label" _msthash="2353039" _msttexthash="133848">Proprietário</label>
         <input type="text" class="form-control" id="inputProprietário"  _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-12">
         <label for="inputTelefone" class="form-label" _msthash="2353039" _msttexthash="133848">Telefone</label>
         <input type="text" class="form-control" id="inputTelefone" placeholder="+55 48 999 99 99" _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-12">
         <label for="inputCelular" class="form-label" _msthash="2353039" _msttexthash="133848">Celular</label>
         <input type="text" class="form-control" id="inputCelular" placeholder="+55 48 999 99 99" _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-md-6">
@@ -125,22 +153,46 @@
       <div class="col-md-6">
         <label for="inputCep" class="form-label" _msthash="2353039" _msttexthash="133848">CEP</label>
         <input type="text" class="form-control" id="inputCep" placeholder="000-00-000" _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-md-6">
         <label for="inputCity" class="form-label" _msthash="2353533" _msttexthash="71383">Cidade</label>
         <input type="text" class="form-control" id="inputCity" placeholder="Exemplo: Cocal do Sul">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
       <div class="col-md-6">
         <label for="inputAddress" class="form-label" _msthash="2353039" _msttexthash="133848">Endereço</label>
         <input type="text" class="form-control" id="inputAddress" placeholder="1234 Rua Principal" _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
       </div>
 
      
       <div class="col-12">
         <label for="inputBairro" class="form-label" _msthash="2353039" _msttexthash="133848">Bairro</label>
         <input type="text" class="form-control" id="inputBairro" placeholder="Exemplo: Nazaré" _mstplaceholder="287287">
+        <div class="invalid-feedback">
+          Por favor preencher esse campo
+        </div>
+      </div>
+
+      <div class='col-md-3'>
+        <div class="form-group">
+            <label for="data-pagamento">Data de Cadastro</label>        
+            <div class="input-group date" data-date-format="dd/mm/yyyy">
+              <input  type="text" class="form-control" id="dataCadastro" placeholder="dd/mm/yyyy">
+              <div class="input-group-addon" >
+                <span class="glyphicon glyphicon-th"></span>
+              </div>
+            </div>
+        </div>
       </div>
 
       <div class="form-check">
@@ -160,9 +212,9 @@
     <input type="checkbox" id="billing-checkbox">
 
       <div class="col-12">
-        <button type="submit" class="btn btn-primary" _msthash="2436798" _msttexthash="77766">Gravar</button>
-        <button type="reset" class="btn btn-primary" _msthash="2436798" _msttexthash="77766" data-bs-toggle="modal" data-bs-target="#exampleModal"s>Limpar</button>
-        <button type="button" class="btn btn-primary" _msthash="2436798" _msttexthash="77766">Voltar</button>
+        <button type="button" id="btnGravar" class="btn btn-primary">Gravar</button>
+        <button type="reset" class="btn btn-primary"   data-bs-toggle="modal" data-bs-target="#exampleModal"s>Limpar</button>
+        <button type="button" class="btn btn-primary" >Voltar</button>
       </div>
     </form>
     
